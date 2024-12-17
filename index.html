@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar with SignUP & Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">
+            <h1><img src="logo.png"></h1>
+        </div>
+        <ul id="menuList">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">product</a></li>
+            <li><a href="">Contact</a></li>
+            <button class="btnlogin-popup">Login</button>
+            <button id="themeButton">Dark Theme</button>
+            
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+
+        </div>
+
+    </nav>
+
+    <script>
+        let menuList=document.getElementById("menuList")
+        menuList.style.maxHeight= "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight ="300px";
+        }
+        else{
+            menuList.style.maxHeight = "0px";
+        }
+        }
+    </script>
+     <section class="header">
+        <div class="text-box">
+            <h1>Cybershied Nigeria: <br>Fortifying Digital Frontiers</h1>
+            <p>Empowering Nigeria's Cybersecurity Landscape with Innovative<br> protection.</p>
+                <a href="signup.html" class="hero-btn">Get Protected Now</a>
+        </div>
+    </section>
+
+    <section class="facilities">
+        <h1>Our facilities</h1>
+        <p>This University is globally recognised, and few of our facilities are listed below:</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/pic4.jpg">
+                <p>Our library is an information center that provides services to students and lecturers in the academic community.
+                     It plays a crucial role in improving the quality of libraries and is evaluated using the SWOT method.
+                     Securing the necessary acquisitions and resources for those who intended them. 
+                </p>
+            </div>    
+            <div class="facilities-col">        
+                <img src="images/pic3.png">
+                <p>The court is a flat, hard surface free from obstructions, 28m long and 15m wide, measured from the
+                     inner edge of the boundary line. The backcourt is the team's own basket,
+                      inbounds part of the backboard and the part of the playing court limited by their own endline.
+                      Our students used for playing basketball for recreational activity.
+                </p>
+            </div>    
+            <div class="facilities-col">    
+                <img src="images/mobile.jpg">
+                <p>The ICT centers are public places where our students can use computers, the internet, and other media;
+                     get training; and obtain a variety of other communication-related services. The ICT centers were also
+                     to create an enablin
+
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+        <div class="form-box Login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot password</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box Register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Agree to Terms & Conditions</label>
+                   
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://kit.fontawesome.com/a469782c2a.js" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
